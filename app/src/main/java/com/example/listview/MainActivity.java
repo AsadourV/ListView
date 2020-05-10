@@ -29,17 +29,7 @@ public class MainActivity extends Activity {
         // Get ListView object from xml
         listView = (ListView) findViewById(R.id.list);
 
-        // Defined Array values to show in ListView
-
-
-        // Define a new Adapter
-        // First parameter - Context
-        // Second parameter - Layout for the row
-        // Third parameter - ID of the TextView to which the data is written
-        // Forth - the Array of data
-
-        final ArrayAdapter<ListValues> adapter = new ArrayAdapter<ListValues>(this,
-                R.layout.list_item, values)
+        final ArrayAdapter<ListValues> adapter = new ArrayAdapter<ListValues>(this,R.layout.list_item, values)
         {
             public View getView(int position, View convertView, ViewGroup parent){
 
